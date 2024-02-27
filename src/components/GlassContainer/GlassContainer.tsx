@@ -3,7 +3,7 @@ import * as S from './StyleGlassContainer';
 const GlassContainer = () => {
   return (
     <S.GlassWrapper>
-      <div>test</div>
+      <div>DZIAŁA TEST</div>
     </S.GlassWrapper>
   );
 };
