@@ -1,7 +1,6 @@
 import * as S from './StyleAboutMe';
 // import TypewriterComponent from 'typewriter-effect';
 import Typewriter from 'typewriter-effect';
-import skillsData from 'DataBase/Skills';
 
 export const AboutMe = () => {
   return (
@@ -24,7 +23,6 @@ export const AboutMe = () => {
           }}
         />
       </S.WrapperNameAndSkills>
-
       {/* <S.Photo>photo</S.Photo> */}
       <S.WrapperDescription>
         <p>
@@ -43,22 +41,6 @@ export const AboutMe = () => {
           Hobbystycznie prowadzę kanał na YouTube.
         </p>
       </S.WrapperDescription>
-
-      <S.WrapperSkills>
-        {/* <S.WrapperSkill>
-          <S.WrapperImgSkill>img</S.WrapperImgSkill>
-          <S.WrapperNameSkill>name</S.WrapperNameSkill>
-        </S.WrapperSkill> */}
-
-        {skillsData.map((skill, index) => (
-          <S.WrapperSkill key={index}>
-            <S.WrapperImgSkill>
-              <img src={skill.logo} alt={skill.name} />
-            </S.WrapperImgSkill>
-            <S.WrapperNameSkill>{skill.name}</S.WrapperNameSkill>
-          </S.WrapperSkill>
-        ))}
-      </S.WrapperSkills>
     </S.AboutMeWrapper>
   );
 };

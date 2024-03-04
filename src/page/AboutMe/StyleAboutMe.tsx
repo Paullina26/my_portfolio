@@ -33,16 +33,22 @@ export const WrapperSkills = styled.div`
 
 export const WrapperSkill = styled.div`
   padding: 10px;
-  background-color: #1b5b45;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
 `;
 
 export const WrapperImgSkill = styled.div`
-  /* padding: 10px; */
-  background-color: #323f79;
+  width: 50px;
+  height: 50px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 export const WrapperNameSkill = styled.div`
   /* padding: 10px; */
-  background-color: #8f2828;
+  /* background-color: #8f2828; */
 `;
 
 export const Photo = styled.div`
