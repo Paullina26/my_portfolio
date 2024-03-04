@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'style/theme';
 // import { GlobalStyle } from 'style/GlobalStyle';
 import { GlobalStyle } from 'style/GlobalStyle';
+import ContainerPage from 'page/ContainerPage/ContainerPage';
 // import RoutesComponent from 'routes';
 // import GlobalProvider from 'utils/GlobalContext';
 // import TemplatesGlobal from 'templates/TemplatesGlobal';
@@ -11,7 +12,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      hello
+      <ContainerPage />
     </ThemeProvider>
   );
 }
