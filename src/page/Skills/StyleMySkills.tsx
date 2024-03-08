@@ -3,6 +3,12 @@ import { glass_effect } from 'style/mixins';
 
 export const WrapperSkills = styled.div`
   ${glass_effect};
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  width: 102vw;
+  margin-left: -1vw;
   /* font-size: 2.5rem; */
   /* padding: 10px; */
 `;
@@ -11,15 +17,15 @@ export const WrapperSkill = styled.div`
   padding: 10px;
   display: inline-block;
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
+  /* margin: auto; */
 `;
 
 export const WrapperImgSkill = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 100%;
   img {
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
   }
 `;
 export const WrapperNameSkill = styled.div`

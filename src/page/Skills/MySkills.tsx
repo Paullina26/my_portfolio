@@ -1,16 +1,17 @@
 import * as S from './StyleMySkills';
 import skillsData from 'DataBase/Skills';
+import Skill from 'components/Skill/Skill';
 
 export const MySkills = () => {
   return (
     <S.WrapperSkills>
       {skillsData.map((skill, index) => (
-        <S.WrapperSkill key={index}>
-          <S.WrapperImgSkill>
-            <img src={skill.logo} alt={skill.name} />
-          </S.WrapperImgSkill>
-          <S.WrapperNameSkill>{skill.name}</S.WrapperNameSkill>
-        </S.WrapperSkill>
+        <Skill
+          key={index}
+          index={index}
+          skillName={skill.name}
+          skillLogo={skill.logo}
+        />
       ))}
     </S.WrapperSkills>
   );

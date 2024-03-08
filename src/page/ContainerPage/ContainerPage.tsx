@@ -4,7 +4,8 @@ import MyProjects from 'page/Projects/MyProjects';
 import MySkills from 'page/Skills/MySkills';
 
 const Wrapper = styled.div`
-  width: 90vw;
+  /* width: 90vw; */
+  overflow-x: hidden;
   height: 100vh;
   text-align: center;
   margin: 10px auto;
