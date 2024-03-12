@@ -1,39 +1,35 @@
-import skillsData from 'DataBase/Skills';
 import * as S from './StyleMyProjects';
-import Skill from 'components/Skill/Skill';
+import CardProject from 'components/CardProject/CardProject';
+import { DataMyProjects } from 'DataBase/Project';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const DataMyProjects = [
-  {
-    tittle: 'Odłoszenia dla Rolników',
-    images: ['HTML', 'CSS', 'JavaScript'],
-    technologies: 'React Styled Components',
-    link: '',
-    description: '',
-    seeMore: '',
-  },
-];
+type MyProjectsProps = {
+  // logo?: string;
+};
 
-export const MyProjects = () => {
+export const MyProjects: React.FC<MyProjectsProps> = () => {
   return (
     <div>
       <S.Project>Projekty</S.Project>
-      <S.CardProject>
-        <S.TittleProject>tytuł</S.TittleProject>
-        <S.WrapperImgProject>zdjęcie</S.WrapperImgProject>
-        <S.WrapperTechnologiesProject>technologie</S.WrapperTechnologiesProject>
-        <div>link</div>
-        {['HTML', 'CSS', 'JavaScript'].map((tech, index) => {
-          const img = skillsData.find(el => el.name === tech);
-
-          return <Skill index={index} skillLogo={tech} />;
-        })}
-        <S.WrapperDescriptionProject>opis</S.WrapperDescriptionProject>
-        <div>zobacz więcej</div>
-      </S.CardProject>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={3}
+        onSlideChange={() => console.log('slide change')}
+        // onSwiper={swiper => console.log(swiper)}
+      >
+        {DataMyProjects.map(el => (
+          <SwiperSlide>
+            <CardProject
+              tittleProject={el.tittle}
+              projectImg={el.images}
+              nameImg={el.tittle}
+              descriptionProject={el.description}
+              technologiesProject={el.technologies}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
 export default MyProjects;
-
-
- {/* <img src={img?.logo} alt={tech} /> */}

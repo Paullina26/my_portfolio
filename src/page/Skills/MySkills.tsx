@@ -11,6 +11,8 @@ export const MySkills = () => {
           index={index}
           skillName={skill.name}
           skillLogo={skill.logo}
+          skillNameElement={skill.name}
+          skillSize='50px'
         />
       ))}
     </S.WrapperSkills>

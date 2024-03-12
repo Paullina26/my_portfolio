@@ -10,11 +10,11 @@ export const WrapperSkill = styled.div`
   /* margin: auto; */
 `;
 
-export const WrapperImgSkill = styled.div`
+export const WrapperImgSkill = styled.div<{ skillSize: string }>`
   width: 100%;
   img {
-    width: 50px;
-    height: 50px;
+    width: ${props => props.skillSize};
+    height: ${props => props.skillSize};
   }
 `;
 export const WrapperNameSkill = styled.div`
@@ -24,21 +24,25 @@ export const WrapperNameSkill = styled.div`
 
 type SkillProps = {
   index: number | string;
-  skillName?: string;
+  skillName: string;
   skillLogo: string;
+  skillNameElement?: string;
+  skillSize?: string;
 };
 
 export const Skill: React.FC<SkillProps> = ({
   index,
   skillName,
   skillLogo,
+  skillNameElement,
+  skillSize = '50px',
 }) => {
   return (
     <WrapperSkill key={index}>
-      <WrapperImgSkill>
+      <WrapperImgSkill skillSize={skillSize}>
         <img src={skillLogo} alt={skillName} />
       </WrapperImgSkill>
-      <WrapperNameSkill>{skillName}</WrapperNameSkill>
+      <WrapperNameSkill>{skillNameElement}</WrapperNameSkill>
     </WrapperSkill>
   );
 };
