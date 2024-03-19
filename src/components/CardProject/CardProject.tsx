@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { glass_effect } from 'style/mixins';
+import { glass_effect, glass_effect_button } from 'style/mixins';
 import Skill from 'components/Skill/Skill';
 import skillsData from 'DataBase/Skills';
 
 export const WrapperCardProject = styled.div`
   ${glass_effect};
-  padding: 10px;
+  padding: 20px;
   display: inline-block;
   width: 400px;
   height: 550px;
@@ -25,17 +25,29 @@ export const WrapperImgProject = styled.div`
 `;
 
 export const WrapperDescriptionProject = styled.div`
-  width: 100%;
-  padding: 10px;
+  padding: 0 10px;
 `;
 
 export const WrapperTechnologiesProject = styled.div`
-  width: 100%;
-  padding: 10px;
+  padding: 10px 0px 0px 0px;
 `;
 export const StyledSkill = styled(Skill)`
   width: 20px;
   height: 20px;
+`;
+
+export const LinkToProject = styled.a`
+  /* width: 20px;
+  height: 20px; */
+  ${glass_effect_button};
+  font-family: 'Jura', sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  top: 20px;
 `;
 
 type CardProjectProps = {
@@ -44,6 +56,7 @@ type CardProjectProps = {
   tittleProject: string;
   descriptionProject: string;
   technologiesProject: string[];
+  link: string;
 };
 
 export const CardProject: React.FC<CardProjectProps> = ({
@@ -52,6 +65,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
   tittleProject,
   descriptionProject,
   technologiesProject,
+  link,
 }) => {
   return (
     <WrapperCardProject>
@@ -73,11 +87,10 @@ export const CardProject: React.FC<CardProjectProps> = ({
           );
         })}
       </WrapperTechnologiesProject>
-      <div>link</div>
       <WrapperDescriptionProject>
         {descriptionProject}
       </WrapperDescriptionProject>
-      <div>zobacz więcej</div>
+      <LinkToProject href={link}>{tittleProject}</LinkToProject>
     </WrapperCardProject>
   );
 };

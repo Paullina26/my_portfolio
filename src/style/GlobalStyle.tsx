@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    overflow-x: hidden;
     font-size: 1.6rem;
     background-attachment: fixed;
     background-color: rgba(14,22,40,1);
