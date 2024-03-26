@@ -3,6 +3,7 @@ import { glass_effect } from 'style/mixins';
 
 export const WrapperProject = styled.div`
   padding: 10px;
+  /* max-width: 100vw; */
 
   .swiper-button-prev,
   .swiper-button-next {
@@ -31,6 +32,7 @@ export const WrapperProject = styled.div`
 export const Project = styled.h2`
   padding: 10px;
   font-size: 5rem;
+  margin-bottom: 20px;
 `;
 
 // swiper-pagination-bullet swiper-pagination-bullet-active

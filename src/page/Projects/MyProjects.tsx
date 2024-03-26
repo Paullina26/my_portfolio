@@ -16,7 +16,7 @@ export const MyProjects: React.FC<MyProjectsProps> = () => {
     <S.WrapperProject>
       <S.Project>Projekty</S.Project>
       <Swiper
-        effect={'flip'}
+        // effect={'flip'}
         grabCursor={true}
         centeredSlides={true}
         rewind={true}
@@ -25,18 +25,26 @@ export const MyProjects: React.FC<MyProjectsProps> = () => {
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        // scrollbar={{ draggable: true }}
         onSlideChange={() => console.log('slide change')}
+        breakpoints={{
+          1024: {
+            slidesPerView: 1,
+          },
+          1000: {
+            slidesPerView: 1,
+          },
+        }}
       >
         {DataMyProjects.map((slide, index) => (
           <SwiperSlide key={slide.title} virtualIndex={index}>
             <CardProject
               tittleProject={slide.title}
-              projectImg={slide.images}
-              nameImg={slide.title}
+              // projectImg={slide.images}
+              // nameImg={slide.title}
               descriptionProject={slide.description}
               technologiesProject={slide.technologies}
               link={slide.link}
+              github={slide.github}
             />
           </SwiperSlide>
         ))}

@@ -7,8 +7,8 @@ export const WrapperCardProject = styled.div`
   ${glass_effect};
   padding: 20px;
   display: inline-block;
-  width: 400px;
-  height: 550px;
+  width: 300px;
+  height: 600px;
 `;
 
 export const TittleProject = styled.p`
@@ -35,28 +35,33 @@ export const StyledSkill = styled(Skill)`
   width: 20px;
   height: 20px;
 `;
-
-export const LinkToProject = styled.a`
-  /* width: 20px;
-  height: 20px; */
+export const WrapperLinkProject = styled.div`
+  margin: 20px auto;
+`;
+export const LinkToProject = styled.div`
   ${glass_effect_button};
-  font-family: 'Jura', sans-serif;
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  margin: 20px;
-  padding: 10px;
   border-radius: 15px;
-  top: 20px;
+  margin: 10px auto;
+  width: 200px;
+
+  a {
+    display: block;
+    padding: 10px;
+    font-family: 'Jura', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
 `;
 
 type CardProjectProps = {
-  projectImg: string;
-  nameImg: string;
+  projectImg?: string;
+  nameImg?: string;
   tittleProject: string;
   descriptionProject: string;
   technologiesProject: string[];
   link: string;
+  github: string;
 };
 
 export const CardProject: React.FC<CardProjectProps> = ({
@@ -66,13 +71,14 @@ export const CardProject: React.FC<CardProjectProps> = ({
   descriptionProject,
   technologiesProject,
   link,
+  github,
 }) => {
   return (
     <WrapperCardProject>
       <TittleProject>{tittleProject}</TittleProject>
-      <WrapperImgProject>
+      {/* <WrapperImgProject>
         <img src={projectImg} alt={nameImg} />
-      </WrapperImgProject>
+      </WrapperImgProject> */}
       <WrapperTechnologiesProject>
         {' '}
         {technologiesProject.map((tech, index) => {
@@ -82,7 +88,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
               index={index}
               skillLogo={img?.logo}
               skillName={tech}
-              skillSize='30px'
+              skillSize='25px'
             />
           );
         })}
@@ -90,7 +96,14 @@ export const CardProject: React.FC<CardProjectProps> = ({
       <WrapperDescriptionProject>
         {descriptionProject}
       </WrapperDescriptionProject>
-      <LinkToProject href={link}>{tittleProject}</LinkToProject>
+      <WrapperLinkProject>
+        <LinkToProject>
+          <a href={link}>Podgląd</a>
+        </LinkToProject>
+        <LinkToProject>
+          <a href={github}>Kod GitHub</a>
+        </LinkToProject>
+      </WrapperLinkProject>
     </WrapperCardProject>
   );
 };

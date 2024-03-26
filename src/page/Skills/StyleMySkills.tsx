@@ -3,22 +3,11 @@ import { glass_effect } from 'style/mixins';
 
 export const WrapperSkills = styled.div`
   ${glass_effect};
-  margin: 10px;
+  border-radius: 0px;
+  margin: 10px 0;
   display: flex;
   justify-content: space-around;
-  padding: 0 20px;
-  width: 102vw;
-  margin-left: -1vw;
-  /* font-size: 2.5rem; */
-  /* padding: 10px; */
-`;
-
-export const WrapperSkill = styled.div`
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  /* justify-content: center; */
-  /* margin: auto; */
+  max-width: 100vw;
 `;
 
 export const WrapperImgSkill = styled.div`

@@ -2,6 +2,7 @@ import AboutMe from 'page/AboutMe/AboutMe';
 import styled from 'styled-components';
 import MyProjects from 'page/Projects/MyProjects';
 import MySkills from 'page/Skills/MySkills';
+import Contact from 'page/Contact/Contact';
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -15,6 +16,7 @@ export const ContainerPage = () => {
       <AboutMe />
       <MySkills />
       <MyProjects />
+      <Contact />
     </Wrapper>
   );
 };
