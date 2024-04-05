@@ -10,7 +10,7 @@ type MyProjectsProps = {
   // logo?: string;
   // swiper: SwiperCore;
 };
-
+// jak nie masz propsów to wywal całe : "React.FC<MyProjectsProps>"
 export const MyProjects: React.FC<MyProjectsProps> = () => {
   return (
     <S.WrapperProject>

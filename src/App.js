@@ -33,3 +33,6 @@ export default App;
 //   );
 // }
 // export default App;
+
+// wszystkie komentarze wywal
+// zmień js na tsx

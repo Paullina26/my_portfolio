@@ -2,14 +2,7 @@ export const DataMyProjects = [
   {
     title: 'Serwis Ogłoszeniowy',
     images: 'obrazek',
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'React',
-      'Git',
-      'Styled Components',
-    ],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Styled Components'],
     link: 'https://adv-front.vercel.app/',
     github: 'https://github.com/Paullina26/advertising_service',
     description:
@@ -18,15 +11,7 @@ export const DataMyProjects = [
   {
     title: 'One Word',
     images: 'obrazek',
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Git',
-      'Styled Components',
-    ],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Git', 'Styled Components'],
     link: 'https://paullina26.github.io/One_Word/',
     github: 'https://github.com/Paullina26/One_Word',
     description:
@@ -35,17 +20,12 @@ export const DataMyProjects = [
   {
     title: 'Star Wars',
     images: 'obrazek',
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'React',
-      'Git',
-      'Styled Components',
-    ],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Styled Components'],
     link: 'https://paullina26.github.io/Star_Wars-React/',
     github: 'https://github.com/Paullina26/Star_Wars-React',
     description:
       'Strona z oparta na ogólno dostępnym API, "SWAPI". Wyświtla karty z bohaterami i filmami wraz z ich opisami. Pierwszy projekt, który zmusił mnie do samodzielnego działania i poszukiwania rozwiązań problemów. Celem projektu było, aby zrozumieć, jak API zwraca dane i jak je wyświetlać na stronie.',
   },
 ];
+
+// folder database wyciągnij z components

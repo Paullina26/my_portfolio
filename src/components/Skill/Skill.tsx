@@ -13,8 +13,8 @@ export const WrapperSkill = styled.div`
 export const WrapperImgSkill = styled.div<{ skillSize: string }>`
   width: 100%;
   img {
-    width: ${props => props.skillSize};
-    height: ${props => props.skillSize};
+    width: ${(props) => props.skillSize};
+    height: ${(props) => props.skillSize};
   }
 `;
 export const WrapperNameSkill = styled.div`
@@ -24,6 +24,7 @@ export const WrapperNameSkill = styled.div`
 
 type SkillProps = {
   index: number | string;
+  // tu musi być "| string"? Index może być stringiem?
   skillName: string;
   skillLogo: string;
   skillNameElement?: string;
@@ -48,3 +49,5 @@ export const Skill: React.FC<SkillProps> = ({
 };
 
 export default Skill;
+
+// komantarze

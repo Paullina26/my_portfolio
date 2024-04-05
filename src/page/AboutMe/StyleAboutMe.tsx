@@ -68,3 +68,5 @@ export const Name = styled.h1`
   font-weight: 100;
   font-size: 6rem;
 `;
+
+// komentarze oczywiście do wywalenia

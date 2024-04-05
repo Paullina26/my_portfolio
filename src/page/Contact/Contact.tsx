@@ -22,6 +22,7 @@ export const Contact = () => {
       <h2>Kontakt</h2>
       <WrapperContactElement>
         <p>MEIL:</p>
+        {/* literówka */}
         <p>paulina2651997@gmail.com</p>
       </WrapperContactElement>
     </WrapperContact>

@@ -7,3 +7,5 @@ export const theme = {
   light: 'rgb(228, 229, 240)',
   colorpurple: 'rgb(91, 20, 111)',
 };
+
+// zmień js na ts

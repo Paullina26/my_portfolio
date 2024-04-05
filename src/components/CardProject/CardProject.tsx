@@ -82,20 +82,11 @@ export const CardProject: React.FC<CardProjectProps> = ({
       <WrapperTechnologiesProject>
         {' '}
         {technologiesProject.map((tech, index) => {
-          const img = skillsData.find(el => el.name === tech);
-          return (
-            <Skill
-              index={index}
-              skillLogo={img?.logo}
-              skillName={tech}
-              skillSize='25px'
-            />
-          );
+          const img = skillsData.find((el) => el.name === tech);
+          return <Skill index={index} skillLogo={img?.logo} skillName={tech} skillSize='25px' />;
         })}
       </WrapperTechnologiesProject>
-      <WrapperDescriptionProject>
-        {descriptionProject}
-      </WrapperDescriptionProject>
+      <WrapperDescriptionProject>{descriptionProject}</WrapperDescriptionProject>
       <WrapperLinkProject>
         <LinkToProject>
           <a href={link}>Podgląd</a>
@@ -108,3 +99,5 @@ export const CardProject: React.FC<CardProjectProps> = ({
   );
 };
 export default CardProject;
+
+// komenatarze i niepotrzeben propsy wywal
