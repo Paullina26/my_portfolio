@@ -85,6 +85,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
           const img = skillsData.find(el => el.name === tech);
           return (
             <Skill
+              key={tech}
               index={index}
               skillLogo={img?.logo}
               skillName={tech}
