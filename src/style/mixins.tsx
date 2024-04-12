@@ -23,7 +23,6 @@ border: 2px inset rgba(0, 0, 0, 0.35)
 `;
 
 export const glass_effect_button = `
-// background: rgba(0, 0, 0, 0.35);
 background: linear-gradient(
   217deg,
   rgba(150, 0, 140, 0.4),

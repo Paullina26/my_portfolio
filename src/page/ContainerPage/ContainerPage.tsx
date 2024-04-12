@@ -5,6 +5,7 @@ import SliderIconHorizontalInfinity from 'components/SliderIconHorizontalInfinit
 import Contact from 'page/Contact/Contact';
 import AboutMe from 'page/AboutMe/AboutMe';
 import skillsData from 'DataBase/Skills';
+import hobbyIconData from 'DataBase/Hobbys';
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -18,7 +19,7 @@ export const ContainerPage = () => {
       <Banner />
       <SliderIconHorizontalInfinity items={skillsData} iconSize='50px' />
       <MyProjects />
-      <SliderIconHorizontalInfinity items={skillsData} iconSize='50px' />
+      <SliderIconHorizontalInfinity items={hobbyIconData} iconSize='50px' />
       <AboutMe />
       <Contact />
     </Wrapper>

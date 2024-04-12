@@ -1,6 +1,6 @@
 export const DataMyProjects = [
   {
-    title: 'Serwis Ogłoszeniowy',
+    title: 'Ogłoszenia',
     images: 'obrazek',
     technologies: [
       'HTML',
@@ -13,7 +13,7 @@ export const DataMyProjects = [
     link: 'https://adv-front.vercel.app/',
     github: 'https://github.com/Paullina26/advertising_service',
     description:
-      'Projekt stanowił dla mnie platformę do praktyki zapytań do API oraz operacji na tablicach danych, takich jak sortowanie, mapowanie i wyświetlanie elementów. Projekt ma na celu rozszerzenie moich umiejętności w zakresie komunikacji z serwerem, obsługi formularzy i ich edycji oraz uwierzytelniania użytkownika. Umożliwia dodawanie ogłoszeń, z uwzględnieniem użytkowników zalogowanych i niezalogowanych.',
+      'Wzorowany na popularnym serwisie ogłoszeniowym. Projekt ma na celu rozszerzenie moich umiejętności: zapytań do API, operacji na tablicach danych, takich jak sortowanie, mapowanie i wyświetlanie elementów, komunikacji z serwerem, obsługi formularzy i ich edycji oraz uwierzytelniania użytkownika. Umożliwia dodawanie ogłoszeń, z uwzględnieniem użytkowników zalogowanych i niezalogowanych.',
   },
   {
     title: 'One Word',

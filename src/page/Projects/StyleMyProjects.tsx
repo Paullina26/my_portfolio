@@ -40,12 +40,6 @@ export const WrapperProject = styled.div`
   }
 `;
 
-export const Project = styled.h2`
-  padding: 10px;
-  font-size: 5rem;
-  margin-bottom: 20px;
-`;
-
 export const CustomPagination = styled.div`
   width: 100vw;
   height: 50px;

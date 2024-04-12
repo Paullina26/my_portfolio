@@ -1,6 +1,6 @@
 import * as S from './StyleSliderIconHorizontalInfinity';
 import skillsData from 'DataBase/Skills';
-import Skill from 'components/Skill/Skill';
+import Icon from 'components/Icon/Icon';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Autoplay } from 'swiper/modules';
@@ -33,7 +33,7 @@ export const SliderIconHorizontalInfinity: React.FC<
       >
         {items.map((item, index) => (
           <SwiperSlide key={index} virtualIndex={index}>
-            <Skill
+            <Icon
               key={index}
               index={index}
               iconName={item.name}

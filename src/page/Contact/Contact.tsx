@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { glass_effect } from 'style/mixins';
+import { TittleSection } from 'components/atoms/TittleSection';
 
 export const WrapperContact = styled.div`
   margin: 10px;
@@ -19,7 +20,7 @@ export const WrapperContactElement = styled.div`
 export const Contact = () => {
   return (
     <WrapperContact>
-      <h2>Kontakt</h2>
+      <TittleSection>Kontakt</TittleSection>
       <WrapperContactElement>
         <p>MEIL:</p>
         <p>paulina2651997@gmail.com</p>

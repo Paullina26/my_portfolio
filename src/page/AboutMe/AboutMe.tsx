@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { TittleSection } from 'components/atoms/TittleSection';
 
 export const AboutMe = () => {
   return (
     <div>
-      <div>AboutMe</div>
+      <TittleSection>O mnie</TittleSection>
+      <div>karta</div>
     </div>
   );
 };

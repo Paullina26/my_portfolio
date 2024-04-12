@@ -7,6 +7,7 @@ import 'swiper/css/bundle';
 import { Pagination, Navigation, EffectFlip } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import { v4 as uuidv4 } from 'uuid';
+import { TittleSection } from 'components/atoms/TittleSection';
 
 type MyProjectsProps = {
   // logo?: string;
@@ -49,7 +50,7 @@ export const MyProjects: React.FC<MyProjectsProps> = () => {
 
   return (
     <S.WrapperProject>
-      <S.Project>Projekty</S.Project>
+      <TittleSection>Projekty</TittleSection>
       <Swiper
         grabCursor={true}
         centeredSlides={true}
