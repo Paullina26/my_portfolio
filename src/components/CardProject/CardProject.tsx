@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { glass_effect, glass_effect_button } from 'style/mixins';
 import Icon from 'components/Icon/Icon';
 import skillsData from 'DataBase/Skills';
+import { AnimatedShiningBar } from 'components/atoms/AnimatedShiningBar';
 
 export const WrapperCardProject = styled.div`
   ${glass_effect};
@@ -9,42 +10,6 @@ export const WrapperCardProject = styled.div`
   display: inline-block;
   width: 310px;
   height: 600px;
-  position: relative;
-  overflow: hidden;
-
-  :after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: -20%;
-    width: 1px;
-    height: 410px;
-
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 70%
-    );
-    border-radius: 50%;
-    opacity: 0.1;
-    animation: shine 2s infinite ease-in-out;
-    z-index: -10;
-  }
-  @keyframes shine {
-    0% {
-      transform: scale(0.8) rotate(90deg);
-      /* transform: scale(0.8); */
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5; /* Dostosuj dla mocniejszego błysku w szczytowym momencie */
-    }
-    100% {
-      transform: scale(1.2) rotate(90deg);
-      /* transform: scale(1.2); */
-      opacity: 0;
-    }
-  }
 `;
 
 export const TittleProject = styled.p`
@@ -137,6 +102,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
   return (
     <WrapperCardProject>
       <TittleProject>{tittleProject}</TittleProject>
+      <AnimatedShiningBar />
       {/* <WrapperImgProject>
         <img src={projectImg} alt={nameImg} />
       </WrapperImgProject> */}

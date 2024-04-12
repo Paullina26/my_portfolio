@@ -10,13 +10,11 @@ export const Banner = () => {
         <Typewriter
           options={{
             strings: [
-              'React',
-              'JavaScript',
-              'TypeScript',
-              'Styled Components',
-              'Git',
-              'HTML',
-              'CSS',
+              'Aspirująca Programistka Front-End',
+              'Entuzjastka Składania PC',
+              'YouTuber',
+              'Zainterseowana AI',
+              'Kochająca Gry Komputerowe',
             ],
             autoStart: true,
             loop: true,
