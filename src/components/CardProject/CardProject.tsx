@@ -87,9 +87,9 @@ export const CardProject: React.FC<CardProjectProps> = ({
             <Skill
               key={tech}
               index={index}
-              skillLogo={img?.logo}
-              skillName={tech}
-              skillSize='25px'
+              iconLogo={img?.logo}
+              iconName={tech}
+              iconSize='25px'
             />
           );
         })}

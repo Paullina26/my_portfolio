@@ -1,8 +1,10 @@
-import AboutMe from 'page/AboutMe/AboutMe';
+import Banner from 'page/Banner/Banner';
 import styled from 'styled-components';
 import MyProjects from 'page/Projects/MyProjects';
-import MySkills from 'page/Skills/MySkills';
+import SliderIconHorizontalInfinity from 'components/SliderIconHorizontalInfinity/SliderIconHorizontalInfinity';
 import Contact from 'page/Contact/Contact';
+import AboutMe from 'page/AboutMe/AboutMe';
+import skillsData from 'DataBase/Skills';
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -13,9 +15,11 @@ const Wrapper = styled.div`
 export const ContainerPage = () => {
   return (
     <Wrapper>
-      <AboutMe />
-      <MySkills />
+      <Banner />
+      <SliderIconHorizontalInfinity items={skillsData} iconSize='50px' />
       <MyProjects />
+      <SliderIconHorizontalInfinity items={skillsData} iconSize='50px' />
+      <AboutMe />
       <Contact />
     </Wrapper>
   );
