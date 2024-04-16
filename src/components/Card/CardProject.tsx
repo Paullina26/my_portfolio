@@ -4,6 +4,7 @@ import Icon from 'components/Icon/Icon';
 import skillsData from 'DataBase/Skills';
 import { AnimatedShiningBar } from 'components/atoms/AnimatedShiningBar';
 import { LinkProject } from 'components/atoms/StyledButtons';
+import ProjectIMG from 'DataBase/ProjectIMG';
 
 export const WrapperCardProject = styled.div`
   ${glass_effect};
@@ -14,36 +15,37 @@ export const WrapperCardProject = styled.div`
 `;
 
 export const TittleProject = styled.p`
-  padding: 10px;
+  padding: 5px;
   font-size: 3rem;
 `;
 
 export const WrapperImgProject = styled.div`
   width: 100%;
   img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    border: 5px inset rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
   }
 `;
 
 export const WrapperDescriptionProject = styled.div`
-  padding: 0 10px;
+  padding: 0;
 `;
 
 export const WrapperTechnologiesProject = styled.div`
-  padding: 10px 0px 0px 0px;
+  padding: 0;
 `;
 export const StyledSkill = styled(Icon)`
-  width: 20px;
-  height: 20px;
+  /* width: 20px; */
+  /* height: 20px; */
 `;
 export const WrapperLinkProject = styled.div`
-  margin: 20px auto;
+  margin: 5px auto;
 `;
 
 type CardProjectProps = {
-  projectImg?: string;
-  nameImg?: string;
+  projectPhoto?: string[];
+  namePhoto?: string;
   title: string;
   description: string;
   technologies?: string[];
@@ -52,8 +54,8 @@ type CardProjectProps = {
 };
 
 export const CardProject: React.FC<CardProjectProps> = ({
-  projectImg,
-  nameImg,
+  projectPhoto,
+  namePhoto,
   title,
   description,
   technologies,
@@ -64,9 +66,13 @@ export const CardProject: React.FC<CardProjectProps> = ({
     <WrapperCardProject>
       <TittleProject>{title}</TittleProject>
       <AnimatedShiningBar />
-      {/* <WrapperImgProject>
-        <img src={projectImg} alt={nameImg} />
-      </WrapperImgProject> */}
+      <WrapperImgProject>
+        {' '}
+        {projectPhoto?.map((photo, index) => {
+          const img = ProjectIMG.find(el => el.name === photo);
+          return <img key={photo} src={img?.path} alt={photo} />;
+        })}
+      </WrapperImgProject>
       <WrapperTechnologiesProject>
         {' '}
         {technologies?.map((tech, index) => {

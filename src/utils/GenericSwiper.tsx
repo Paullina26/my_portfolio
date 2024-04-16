@@ -43,7 +43,6 @@ const CustomPagination = styled.div`
 `;
 
 export const WrapperSwiper = styled.div`
-  padding: 10px;
   .swiper-button-prev,
   .swiper-button-next {
     color: #dddddd;
@@ -108,7 +107,8 @@ const GenericSwiper: React.FC<SwiperComponentProps> = ({
         slidesPerView={1}
         breakpoints={{
           1024: { slidesPerView: 3 },
-          1000: { slidesPerView: 1 },
+          900: { slidesPerView: 3 },
+          600: { slidesPerView: 1, navigation: false },
         }}
       >
         {swiperData.map((item, index) => (

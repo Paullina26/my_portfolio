@@ -4,51 +4,9 @@ import { glass_effect } from 'style/mixins';
 export const BannerWrapper = styled.div`
   margin-top: 20px;
   padding: 20px;
-  /* ${glass_effect}; */
-  /* min-height: 350px; */
-  /* min-width: 50px; */
-`;
-
-export const GlassContainer = styled.div`
-  ${glass_effect};
-  min-height: 50px;
-  min-width: 50px;
-  max-width: 60vw;
-`;
-
-export const WrapperDescription = styled.div`
-  ${glass_effect};
-  font-size: 1.8rem;
-  margin: 20px auto;
-  padding: 20px;
-  min-width: 50px;
-  max-width: 60vw;
-`;
-
-export const WrapperSkills = styled.div`
-  ${glass_effect};
-  /* font-size: 2.5rem; */
-  /* padding: 10px; */
-`;
-
-export const WrapperSkill = styled.div`
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
-`;
-
-export const WrapperImgSkill = styled.div`
-  width: 50px;
-  height: 50px;
-  img {
-    width: 100%;
-    height: 100%;
+  @media (max-width: 414px) {
+    min-height: 250px;
   }
-`;
-export const WrapperNameSkill = styled.div`
-  /* padding: 10px; */
-  /* background-color: #8f2828; */
 `;
 
 export const Photo = styled.div`

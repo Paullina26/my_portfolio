@@ -1,15 +1,8 @@
 export const DataMyProjects = [
   {
     title: 'Ogłoszenia',
-    images: 'obrazek',
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'React',
-      'Git',
-      'Styled Components',
-    ],
+    projectPhoto: ['IMG_Ogloszenia_2'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Styled Comp.'],
     link: 'https://adv-front.vercel.app/',
     github: 'https://github.com/Paullina26/advertising_service',
     description:
@@ -17,7 +10,7 @@ export const DataMyProjects = [
   },
   {
     title: 'One Word',
-    images: 'obrazek',
+    projectPhoto: ['IMG_OneWord_3'],
     technologies: [
       'HTML',
       'CSS',
@@ -25,24 +18,18 @@ export const DataMyProjects = [
       'TypeScript',
       'React',
       'Git',
-      'Styled Components',
+      'Styled Comp.',
     ],
     link: 'https://paullina26.github.io/One_Word/',
     github: 'https://github.com/Paullina26/One_Word',
     description:
-      'Pracuję nad interaktywną platformą do nauki języka obcego, która integruje różnorodne metody uczenia się, takie jak gry, fiszki i tłumaczenia. Użytkownik ma możliwość personalizacji swojego doświadczenia poprzez dodawanie własnych słówek.. Celem projektu jest, by każdego dnia poświęcać kilka minut na naukę języka obcego. Współpracuję z doświadczonym developerem, który recenzuje mój kod i udziela cennych wskazówek.',
+      'Pracuję nad interaktywną platformą do nauki języka obcego, która integruje różnorodne metody uczenia się, takie jak gry, fiszki i tłumaczenia. Użytkownik ma możliwość personalizacji swojego doświadczenia poprzez dodawanie własnych słówek. Celem projektu jest, by każdego dnia poświęcać kilka minut na naukę języka obcego. Współpracuję z doświadczonym developerem, który recenzuje mój kod i udziela cennych wskazówek.',
   },
   {
     title: 'Star Wars',
-    images: 'obrazek',
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'React',
-      'Git',
-      'Styled Components',
-    ],
+    projectPhoto: [],
+    namePhoto: 'obrazek',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Styled Comp.'],
     link: 'https://paullina26.github.io/Star_Wars-React/',
     github: 'https://github.com/Paullina26/Star_Wars-React',
     description:

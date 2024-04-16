@@ -1,13 +1,9 @@
 import styled from 'styled-components';
-import { glass_effect } from 'style/mixins';
-import skillsData from 'DataBase/Skills';
 
 export const WrapperIcon = styled.div`
-  padding: 10px;
+  padding: 5px;
   display: inline-block;
   text-align: center;
-  /* justify-content: center; */
-  /* margin: auto; */
 `;
 
 export const WrapperImgIcon = styled.div<{ $iconSizeStyle: string }>`
@@ -19,7 +15,6 @@ export const WrapperImgIcon = styled.div<{ $iconSizeStyle: string }>`
 `;
 export const WrapperNameIcon = styled.div`
   /* padding: 10px; */
-  /* background-color: #8f2828; */
 `;
 
 type IconProps = {

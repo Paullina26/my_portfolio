@@ -3,11 +3,12 @@ import { glass_effect } from 'style/mixins';
 
 export const WrapperSliderIconHorizontalInfinity = styled.div`
   ${glass_effect};
+  overflow-x: hidden;
   border-radius: 0px;
-  margin: 10px 0;
+  margin: 10px auto;
   display: flex;
   justify-content: space-around;
-  max-width: 100vw;
+  width: 100vw;
 `;
 
 export const WrapperImgSkill = styled.div`

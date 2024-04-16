@@ -24,6 +24,9 @@ export const SliderIconHorizontalInfinity: React.FC<
         autoplay={{ delay: 1, disableOnInteraction: false }}
         breakpoints={{
           1024: {
+            slidesPerView: 6,
+          },
+          750: {
             slidesPerView: 5,
           },
           600: {

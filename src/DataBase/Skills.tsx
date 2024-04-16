@@ -28,7 +28,7 @@ const skillsData = [
     logo: REACT_LOGO,
   },
   {
-    name: 'Styled Components',
+    name: 'Styled Comp.',
     logo: STYLE_COMPONENT_LOGO,
   },
   {

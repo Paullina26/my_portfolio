@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   height: 100vh;
   text-align: center;
   margin: 10px auto;
+  /* overflow-x: hidden; */
 `;
 
 export const ContainerPage = () => {

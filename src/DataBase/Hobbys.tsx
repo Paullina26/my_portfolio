@@ -1,4 +1,3 @@
-import GIT_LOGO from 'assets/img/git.png';
 import HOBBY_CANVA from '../assets/img/canva.png';
 import HOBBY_YOUTUBE from '../assets/img/YouTube.png';
 import HOBBY_GRY from '../assets/img/Gry.png';
@@ -34,7 +33,7 @@ const hobbyIconData = [
     logo: HOBBY_PHOTOSHOP,
   },
   {
-    name: 'DaVinci Resolve',
+    name: 'DaVinci',
     logo: HOBBY_DAVINCI_RESOLVE,
   },
   {
