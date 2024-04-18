@@ -6,7 +6,7 @@ export const HobbyCard = styled.div`
   ${glass_effect_box};
   padding: 20px;
   display: inline-block;
-  width: 310px;
+  width: 300px;
   max-width: 90vw;
   height: 600px;
 `;

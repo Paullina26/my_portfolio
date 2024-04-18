@@ -6,7 +6,7 @@ export const DataMyProjects = [
     link: 'https://adv-front.vercel.app/',
     github: 'https://github.com/Paullina26/advertising_service',
     description:
-      'Wzorowany na popularnym serwisie ogłoszeniowym. Projekt ma na celu rozszerzenie moich umiejętności: zapytań do API, operacji na tablicach danych, takich jak sortowanie, mapowanie i wyświetlanie elementów, komunikacji z serwerem, obsługi formularzy i ich edycji oraz uwierzytelniania użytkownika. Umożliwia dodawanie ogłoszeń, z uwzględnieniem użytkowników zalogowanych i niezalogowanych.',
+      'Umożliwia dodawanie ogłoszeń, z uwzględnieniem użytkowników zalogowanych i niezalogowanych. Poszerzył moje umiejętnosci: zapytań do API, operacji na tablicach danych, takich jak sortowanie, mapowanie i wyświetlanie elementów, komunikacji z serwerem, obsługi formularzy i ich edycji oraz uwierzytelniania użytkownika. ',
   },
   {
     title: 'One Word',

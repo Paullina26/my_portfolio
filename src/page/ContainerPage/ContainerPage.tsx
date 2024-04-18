@@ -20,7 +20,7 @@ export const ContainerPage = () => {
       <MyProjects />
       <SliderIconHorizontalInfinity items={hobbyIconData} iconSize='50px' />
       <AboutMe />
-      <Contact />
+      {/* <Contact /> */}
     </Wrapper>
   );
 };

@@ -10,7 +10,7 @@ export const WrapperCardProject = styled.div`
   ${glass_effect};
   padding: 20px;
   display: inline-block;
-  width: 310px;
+  width: 300px;
   max-width: 90vw;
   height: 600px;
 `;

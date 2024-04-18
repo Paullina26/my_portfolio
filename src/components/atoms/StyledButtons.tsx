@@ -5,7 +5,7 @@ export const LinkProject = styled.div`
   ${glass_effect_button};
   border-radius: 15px;
   margin: 10px auto;
-  width: 200px;
+  width: 180px;
   position: relative;
   overflow: hidden;
 
@@ -13,7 +13,7 @@ export const LinkProject = styled.div`
     display: block;
     padding: 10px;
     font-family: 'Jura', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
     text-decoration: none;
     z-index: 20;
