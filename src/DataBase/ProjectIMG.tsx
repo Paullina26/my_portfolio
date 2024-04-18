@@ -5,6 +5,7 @@ import IMGE_PROJECT_ONE_WORD_4 from 'assets/img/one_word_4.png';
 import IMAGE_PROJECT_OGLOSZENI_1 from 'assets/img/ogloszenia_1.png';
 import IMAGE_PROJECT_OGLOSZENI_2 from 'assets/img/ogloszenia_2.png';
 import IMAGE_PROJECT_OGLOSZENI_3 from 'assets/img/ogloszenia_3.png';
+import IMAGE_PROJECT_STAR_WARS_1 from 'assets/img/star_wars_1.png';
 
 const ProjectIMG = [
   {
@@ -34,6 +35,10 @@ const ProjectIMG = [
   {
     name: 'IMG_Ogloszenia_3',
     path: IMAGE_PROJECT_OGLOSZENI_3,
+  },
+  {
+    name: 'IMG_StarWars_1',
+    path: IMAGE_PROJECT_STAR_WARS_1,
   },
 ];
 

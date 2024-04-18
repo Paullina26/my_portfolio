@@ -27,7 +27,7 @@ export const DataMyProjects = [
   },
   {
     title: 'Star Wars',
-    projectPhoto: [],
+    projectPhoto: ['IMG_StarWars_1'],
     namePhoto: 'obrazek',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Styled Comp.'],
     link: 'https://paullina26.github.io/Star_Wars-React/',
