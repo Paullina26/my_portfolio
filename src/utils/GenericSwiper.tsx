@@ -49,6 +49,9 @@ export const WrapperSwiper = styled.div`
   .swiper-button-next {
     color: #dddddd;
     --swiper-navigation-size: 70px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .swiper-scrollbar {
     opacity: 0;
@@ -82,7 +85,6 @@ const GenericSwiper: React.FC<SwiperComponentProps> = ({
   data,
   cardComponent: CardComponent,
 }) => {
-  const [useNavigation, setUseNavigation] = useState(true);
   const [activeSlide, setActiveSlide] = useState(0);
   const [swiperData, setSwiperData] = useState<Array<(typeof data)[0]>>([]);
   const swiperRef = useRef<SwiperCore | null>(null);
@@ -96,19 +98,6 @@ const GenericSwiper: React.FC<SwiperComponentProps> = ({
     }
   }, [data]);
 
-  useEffect(() => {
-    const checkScreenWidth = () => {
-      if (window.innerWidth < 768) {
-        setUseNavigation(false);
-      } else {
-        setUseNavigation(true);
-      }
-    };
-    checkScreenWidth();
-    window.addEventListener('resize', checkScreenWidth);
-    return () => window.removeEventListener('resize', checkScreenWidth);
-  }, []);
-
   return (
     <WrapperSwiper>
       <Swiper
@@ -117,7 +106,7 @@ const GenericSwiper: React.FC<SwiperComponentProps> = ({
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        navigation={useNavigation ? true : false}
+        navigation={true}
         modules={[Pagination, Navigation, EffectFlip]}
         spaceBetween={50}
         slidesPerView={1}
