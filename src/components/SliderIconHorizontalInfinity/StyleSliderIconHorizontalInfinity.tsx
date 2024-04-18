@@ -7,7 +7,6 @@ export const WrapperSliderIconHorizontalInfinity = styled.div`
   border-radius: 0px;
   margin: 10px auto;
   display: flex;
-  justify-content: space-around;
   width: 100vw;
 `;
 

@@ -11,6 +11,7 @@ export const WrapperCardProject = styled.div`
   padding: 20px;
   display: inline-block;
   width: 310px;
+  max-width: 90vw;
   height: 600px;
 `;
 
