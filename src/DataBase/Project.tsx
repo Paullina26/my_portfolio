@@ -30,7 +30,7 @@ export const DataMyProjects = [
     projectPhoto: ['IMG_StarWars_1'],
     namePhoto: 'obrazek',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Styled Comp.'],
-    link: 'https://paullina26.github.io/Star_Wars-React/',
+    link: 'https://star-wars.paulina-golenia.pl',
     github: 'https://github.com/Paullina26/Star_Wars-React',
     description:
       'Strona z oparta na ogólno dostępnym API, "SWAPI". Wyświtla karty z bohaterami i filmami wraz z ich opisami. Pierwszy projekt, który zmusił mnie do samodzielnego działania i poszukiwania rozwiązań problemów. Celem projektu było, aby zrozumieć, jak API zwraca dane i jak je wyświetlać na stronie.',
